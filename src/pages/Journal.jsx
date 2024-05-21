@@ -30,7 +30,9 @@ function Journal() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-4">Journal</h1>
+      <div className="w-full flex justify-center">
+      <h1 className="p-2 mr-2 bg-blue-500 text-white font-bold text-center text-xl w-1/4 mb-4">Journal</h1>
+      </div>
       <MessageInput addMessage={addMessage} />
       <SearchAndSort
         searchTerm={searchTerm}

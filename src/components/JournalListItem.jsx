@@ -8,12 +8,13 @@ export const JournalListItem = ({ message, handleSendToChatGPT }) => {
           <p>{message.response}</p>
         </div>
       ) : (
+        <div className="w-full flex justify-center">
         <button
           onClick={handleSendToChatGPT}
           className="mt-2 p-2 bg-green-500 text-white rounded"
         >
-          Send to ChatGPT
-        </button>
+          Get an Opinion
+        </button> </div>
       )}
     </div>
   );
